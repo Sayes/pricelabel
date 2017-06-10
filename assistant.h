@@ -11,8 +11,6 @@ class Assistant : public IModifyPrice {
 
     void modify_price(int val);
 
-    void set_price(Price *price) { price_ = price; }
-
    private:
     Price *price_;
 };

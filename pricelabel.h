@@ -3,7 +3,6 @@
 
 #include <string>
 
-class Price;
 class PriceLabel {
    public:
     PriceLabel(const std::string &);
@@ -12,7 +11,6 @@ class PriceLabel {
     void update(int value);
 
    private:
-    Price *price_;
     std::string label_;
 };
 
