@@ -4,7 +4,6 @@
 #include "singleton.h"
 #include "modifyprice.h"
 #include "assistant.h"
-#include "price.h"
 
 class Boss : public IMktSingleton<Boss>, public IModifyPrice {
    public:

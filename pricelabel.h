@@ -2,13 +2,15 @@
 #define PRICELABEL_H_
 
 #include <string>
+#include "observer.h"
 
-class PriceLabel {
+class Subject;
+class PriceLabel : public Observer {
    public:
     PriceLabel(const std::string &);
     virtual ~PriceLabel();
 
-    void update(int value);
+    void update(Subject *);
 
    private:
     std::string label_;

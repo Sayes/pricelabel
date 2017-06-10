@@ -6,7 +6,7 @@
 
 class Assistant : public IModifyPrice {
    public:
-    Assistant(Price *price) : price_(0) { price_ = price; };
+    Assistant(Price *price) : price_(nullptr) { price_ = price; };
     virtual ~Assistant() { delete price_; };
 
     void modify_price(int val);

@@ -22,7 +22,7 @@ class IMktSingleton {
         if (instance_) {
             printf("IMktSingleton::release()\n");
             delete instance_;
-            instance_ = 0;
+            instance_ = nullptr;
         }
     }
 
@@ -33,6 +33,6 @@ class IMktSingleton {
 };
 
 template <class T>
-T* IMktSingleton<T>::instance_ = 0;
+T* IMktSingleton<T>::instance_ = nullptr;
 
 #endif

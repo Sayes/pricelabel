@@ -2,4 +2,4 @@ all:
 	g++ *.cc -std=c++11 -Wall -g -o pricelabel
 
 clean:
-	rm pricelabel
+	rm pricelabel -f

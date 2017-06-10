@@ -1,5 +1,6 @@
 #include <cstdlib>
 #include "boss.h"
+#include "pricelabel.h"
 
 int main(int argc, char *argv[]) {
     Boss *pboss = Boss::get_instance();

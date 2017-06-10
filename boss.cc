@@ -1,7 +1,7 @@
 #include "boss.h"
 #include <cstdio>
 
-Boss::Boss() : ass_(0) { printf("Boss::Boss()\n"); }
+Boss::Boss() : ass_(nullptr) { printf("Boss::Boss()\n"); }
 
 Boss::~Boss() { printf("Boss::~Boss()\n"); }
 

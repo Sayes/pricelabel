@@ -1,23 +1,18 @@
 #ifndef PRICE_H_
 #define PRICE_H_
 
-#include <list>
-#include "pricelabel.h"
+#include "subject.h"
 
-class Price {
+class Price : public Subject {
    public:
     Price();
     virtual ~Price();
 
-    void attach(PriceLabel*);
-    void detach(PriceLabel*);
-    void notify();
-
     void set_price(int val) { val_ = val; }
+    int get_price() { return val_; }
 
    private:
     int val_;
-    std::list<PriceLabel*> pricelabels_;
 };
 
 #endif
