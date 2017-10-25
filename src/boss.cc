@@ -1,4 +1,8 @@
-#include "boss.h"
+/*
+ * Copyright Richard Shen 2017
+ */
+
+#include "include/boss.h"
 #include <cstdio>
 
 namespace pl {

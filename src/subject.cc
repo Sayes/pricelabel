@@ -1,5 +1,9 @@
-#include "subject.h"
-#include "observer.h"
+/*
+ * Copyright Richard Shen 2017
+ */
+
+#include "include/subject.h"
+#include "include/observer.h"
 
 namespace pl {
 

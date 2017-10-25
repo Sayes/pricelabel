@@ -1,4 +1,8 @@
-#include "price.h"
+/*
+ * Copyright Richard Shen 2017
+ */
+
+#include "include/price.h"
 #include <cstdio>
 
 namespace pl {

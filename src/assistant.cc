@@ -1,4 +1,8 @@
-#include "assistant.h"
+/*
+ * Copyright Richard Shen 2017
+ */
+
+#include "include/assistant.h"
 
 namespace pl {
 

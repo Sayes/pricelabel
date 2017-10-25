@@ -1,6 +1,10 @@
+/*
+ * Copyright Richard Shen 2017
+ */
+
 #include <cstdlib>
-#include "boss.h"
-#include "pricelabel.h"
+#include "include/boss.h"
+#include "include/pricelabel.h"
 
 int main(int argc, char *argv[]) {
     pl::Boss *pboss = pl::Boss::get_instance();

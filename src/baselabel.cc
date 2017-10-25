@@ -1,4 +1,8 @@
-#include "baselabel.h"
+/*
+ * Copyright Richard Shen 2017
+ */
+
+#include "include/baselabel.h"
 #include <cstdio>
 
 namespace pl {

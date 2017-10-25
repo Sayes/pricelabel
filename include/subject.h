@@ -1,24 +1,28 @@
-#ifndef SUBJECT_H_
-#define SUBJECT_H_
+/*
+ * Copyright Richard Shen 2017
+ */
+
+#ifndef INCLUDE_SUBJECT_H_
+#define INCLUDE_SUBJECT_H_
 
 #include <list>
-#include "observer.h"
+#include "include/observer.h"
 
 namespace pl {
 
 class Subject {
-   public:
+   public:  // NOLINT
     virtual ~Subject();
     void attach(Observer*);
     void detach(Observer*);
     void notify();
 
-   protected:
+   protected:  // NOLINT
     Subject();
 
-   private:
+   private:  // NOLINT
     std::list<Observer*> observers_;
 };
 }  // namespace pl
 
-#endif
+#endif  // INCLUDE_SUBJECT_H_

@@ -1,5 +1,9 @@
-#ifndef SINGLETON_H_
-#define SINGLETON_H_
+/*
+ * Copyright Richard Shen 2017
+ */
+
+#ifndef INCLUDE_SINGLETON_H_
+#define INCLUDE_SINGLETON_H_
 
 #include <cstdio>
 
@@ -7,11 +11,11 @@ namespace pl {
 
 template <class T>
 class IMktSingleton {
-   private:
+   private:  // NOLINT
     IMktSingleton(const IMktSingleton&);
     IMktSingleton& operator=(const IMktSingleton&);
 
-   public:
+   public:  // NOLINT
     static T* get_instance() {
         if (!instance_) {
             printf("IMktSingleton::get_instance()\n");
@@ -28,9 +32,9 @@ class IMktSingleton {
         }
     }
 
-   protected:
-    IMktSingleton() { printf("IMktSingleton::IMktSingleton()\n"); };
-    ~IMktSingleton() { printf("IMktSingleton::~IMktSingleton()\n"); };
+   protected:  // NOLINT
+    IMktSingleton() { printf("IMktSingleton::IMktSingleton()\n"); }
+    ~IMktSingleton() { printf("IMktSingleton::~IMktSingleton()\n"); }
     static T* instance_;
 };
 
@@ -38,4 +42,4 @@ template <class T>
 T* IMktSingleton<T>::instance_ = nullptr;
 }  // namespace pl
 
-#endif
+#endif  // INCLUDE_SINGLETON_H_

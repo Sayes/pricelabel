@@ -1,8 +1,12 @@
+/*
+ * Copyright Richard Shen 2017
+ */
+
 #include <cstdio>
-#include "pricelabel.h"
-#include "price.h"
-#include "subject.h"
-#include "baselabel.h"
+#include "include/pricelabel.h"
+#include "include/price.h"
+#include "include/subject.h"
+#include "include/baselabel.h"
 
 namespace pl {
 
