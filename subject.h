@@ -4,6 +4,8 @@
 #include <list>
 #include "observer.h"
 
+namespace pl {
+
 class Subject {
    public:
     virtual ~Subject();
@@ -17,5 +19,6 @@ class Subject {
    private:
     std::list<Observer*> observers_;
 };
+}  // namespace pl
 
 #endif

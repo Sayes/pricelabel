@@ -3,17 +3,20 @@
 
 #include <string>
 #include "observer.h"
+#include "baselabel.h"
+
+namespace pl {
 
 class Subject;
-class PriceLabel : public Observer {
+class PriceLabel : public Observer, public BaseLabel {
    public:
-    PriceLabel(const std::string &);
+    PriceLabel(const Subject *, const std::string &);
     virtual ~PriceLabel();
-
-    void update(Subject *);
+    void update();
 
    private:
-    std::string label_;
+    Subject *subject_{nullptr};
 };
+}  // namespace pl
 
 #endif

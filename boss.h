@@ -5,6 +5,8 @@
 #include "modifyprice.h"
 #include "assistant.h"
 
+namespace pl {
+
 class Boss : public IMktSingleton<Boss>, public IModifyPrice {
    public:
     void modify_price(int val);
@@ -18,7 +20,8 @@ class Boss : public IMktSingleton<Boss>, public IModifyPrice {
     friend IMktSingleton<Boss>;
 
    private:
-    Assistant* ass_;
+    Assistant* ass_{nullptr};
 };
+}  // namespace pl
 
 #endif

@@ -1,11 +1,20 @@
+#include <cstdio>
 #include "pricelabel.h"
 #include "price.h"
+#include "subject.h"
+#include "baselabel.h"
 
-PriceLabel::PriceLabel(const std::string& label) : label_(label) {}
+namespace pl {
+
+PriceLabel::PriceLabel(const Subject* psubject, const std::string& label)
+    : BaseLabel(label), subject_(const_cast<Subject*>(psubject)) {}
+
 PriceLabel::~PriceLabel() {}
 
-void PriceLabel::update(Subject* subject) {
-    Price* p = static_cast<Price*>(subject);
+void PriceLabel::update() {
+    Price* p = static_cast<Price*>(subject_);
     if (!p) return;
-    printf("label %s price is %d\n", label_.c_str(), p->get_price());
+    show();
+    printf(" price is %d\n", p->get_price());
 }
+}  // namespace pl

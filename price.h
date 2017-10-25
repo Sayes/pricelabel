@@ -3,6 +3,8 @@
 
 #include "subject.h"
 
+namespace pl {
+
 class Price : public Subject {
    public:
     Price();
@@ -12,7 +14,8 @@ class Price : public Subject {
     int get_price() { return val_; }
 
    private:
-    int val_;
+    int val_{0};
 };
+}  // namespace pl
 
 #endif

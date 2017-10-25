@@ -3,3 +3,4 @@ all:
 
 clean:
 	rm pricelabel -f
+	rm *.o -f

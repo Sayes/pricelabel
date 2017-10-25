@@ -3,18 +3,18 @@
 #include "pricelabel.h"
 
 int main(int argc, char *argv[]) {
-    Boss *pboss = Boss::get_instance();
-    Price price;
+    pl::Boss *pboss = pl::Boss::get_instance();
+    pl::Price price;
 
-    PriceLabel label1("label1");
-    PriceLabel label2("label2");
-    PriceLabel label3("label3");
+    pl::PriceLabel label1(&price, "label1");
+    pl::PriceLabel label2(&price, "label2");
+    pl::PriceLabel label3(&price, "label3");
 
     price.attach(&label1);
     price.attach(&label2);
     price.attach(&label3);
 
-    Assistant ass(&price);
+    pl::Assistant ass(&price);
     pboss->specify_assistant(&ass);
     pboss->modify_price(20);
     price.detach(&label2);

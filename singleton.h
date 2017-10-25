@@ -3,6 +3,8 @@
 
 #include <cstdio>
 
+namespace pl {
+
 template <class T>
 class IMktSingleton {
    private:
@@ -34,5 +36,6 @@ class IMktSingleton {
 
 template <class T>
 T* IMktSingleton<T>::instance_ = nullptr;
+}  // namespace pl
 
 #endif
