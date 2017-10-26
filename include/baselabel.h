@@ -14,7 +14,7 @@ class BaseLabel : public ILabelInterface {
    public:  // NOLINT
     explicit BaseLabel(const std::string& label) : label_(label) {}
     ~BaseLabel() {}
-    virtual void show();
+    void show();
 
    private:  // NOLINT
     std::string label_{""};
