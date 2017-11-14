@@ -12,19 +12,19 @@
 namespace pl {
 
 class Boss : public IMktSingleton<Boss>, public IModifyPrice {
-   public:  // NOLINT
-    void modify_price(int val);
-    void specify_assistant(Assistant* ass);
+ public:
+  void modify_price(int val);
+  void specify_assistant(Assistant* ass);
 
-   private:  // NOLINT
-    Boss();
-    virtual ~Boss();
-    Boss(const Boss&);
-    Boss& operator=(const Boss&);
-    friend IMktSingleton<Boss>;
+ private:
+  Boss();
+  virtual ~Boss();
+  Boss(const Boss&);
+  Boss& operator=(const Boss&);
+  friend IMktSingleton<Boss>;
 
-   private:  // NOLINT
-    Assistant* ass_{nullptr};
+ private:
+  Assistant* ass_{nullptr};
 };
 }  // namespace pl
 

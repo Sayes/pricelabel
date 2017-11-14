@@ -8,8 +8,8 @@
 namespace pl {
 
 class IModifyPrice {
-   public:  // NOLINT
-    virtual void modify_price(int val) = 0;
+ public:
+  virtual void modify_price(int val) = 0;
 };
 }  // namespace pl
 

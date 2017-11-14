@@ -8,8 +8,8 @@
 namespace pl {
 
 class ILabelInterface {
-   public:  // NOLINT
-    virtual void show() = 0;
+ public:
+  virtual void show() = 0;
 };
 }  // namespace pl
 

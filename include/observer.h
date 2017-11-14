@@ -8,12 +8,12 @@
 namespace pl {
 
 class Observer {
-   public:  // NOLINT
-    virtual ~Observer();
-    virtual void update() = 0;
+ public:
+  virtual ~Observer();
+  virtual void update() = 0;
 
-   protected:  // NOLINT
-    Observer();
+ protected:
+  Observer();
 };
 }  // namespace pl
 
