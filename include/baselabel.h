@@ -11,13 +11,13 @@
 namespace pl {
 
 class BaseLabel : public ILabelInterface {
-   public:  // NOLINT
-    explicit BaseLabel(const std::string& label) : label_(label) {}
-    ~BaseLabel() {}
-    virtual void show();
+ public:
+  explicit BaseLabel(const std::string& label) : label_(label) {}
+  ~BaseLabel() {}
+  virtual void show();
 
-   private:  // NOLINT
-    std::string label_{""};
+ private:
+  std::string label_{""};
 };
 }  // namespace pl
 

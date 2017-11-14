@@ -10,15 +10,15 @@
 namespace pl {
 
 class Price : public Subject {
-   public:  // NOLINT
-    Price();
-    virtual ~Price();
+ public:
+  Price();
+  virtual ~Price();
 
-    void set_price(int val) { val_ = val; }
-    int get_price() { return val_; }
+  void set_price(int val) { val_ = val; }
+  int get_price() { return val_; }
 
-   private:  // NOLINT
-    int val_{0};
+ private:
+  int val_{0};
 };
 }  // namespace pl
 

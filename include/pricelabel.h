@@ -13,13 +13,13 @@ namespace pl {
 
 class Subject;
 class PriceLabel : public Observer, public BaseLabel {
-   public:  // NOLINT
-    PriceLabel(const Subject *, const std::string &);
-    virtual ~PriceLabel();
-    void update();
+ public:
+  PriceLabel(const Subject *, const std::string &);
+  virtual ~PriceLabel();
+  void update();
 
-   private:  // NOLINT
-    Subject *subject_{nullptr};
+ private:
+  Subject *subject_{nullptr};
 };
 }  // namespace pl
 

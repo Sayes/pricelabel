@@ -11,14 +11,14 @@
 namespace pl {
 
 class Assistant : public IModifyPrice {
-   public:  // NOLINT
-    explicit Assistant(Price *price) : price_(nullptr) { price_ = price; }
-    virtual ~Assistant() { delete price_; }
+ public:
+  explicit Assistant(Price *price) : price_(nullptr) { price_ = price; }
+  virtual ~Assistant() { delete price_; }
 
-    void modify_price(int val);
+  void modify_price(int val);
 
-   private:  // NOLINT
-    Price *price_{nullptr};
+ private:
+  Price *price_{nullptr};
 };
 }  // namespace pl
 

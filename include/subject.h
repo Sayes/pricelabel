@@ -11,17 +11,17 @@
 namespace pl {
 
 class Subject {
-   public:  // NOLINT
-    virtual ~Subject();
-    void attach(Observer*);
-    void detach(Observer*);
-    void notify();
+ public:
+  virtual ~Subject();
+  void attach(Observer*);
+  void detach(Observer*);
+  void notify();
 
-   protected:  // NOLINT
-    Subject();
+ protected:
+  Subject();
 
-   private:  // NOLINT
-    std::list<Observer*> observers_;
+ private:
+  std::list<Observer*> observers_;
 };
 }  // namespace pl
 
